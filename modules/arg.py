@@ -71,6 +71,7 @@ class ARG(commands.Cog, name="ARG"):
         for i in range(len(splitlist)):
             if splitlist[i].lower() in self.decryptkey:
                 combilist.append(self.decryptkey[splitlist[i].lower()])
+                combilist.append(" ")
         bit = ""
         joinedlist = bit.join(combilist)
         if len(joinedlist) == 0:
